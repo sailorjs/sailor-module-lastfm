@@ -1,0 +1,38 @@
+{
+  "name": "sailor-module-lastfm",
+  "description": "New module for Sailor",
+  "version": "0.0.0",
+  "author": {
+    "name": "Kiko Beats",
+    "email": "josefrancisco.verdu@gmail.com",
+    "url": "https://github.com/Kikobeats"
+  },
+  "dependencies": {
+    "lastfmapi": "*",
+    "sailor-errorify": "git://github.com/sailorjs/sailor-errorify",
+    "sailor-translate": "git://github.com/sailorjs/sailor-translate",
+    "sailor-validator": "git://github.com/sailorjs/sailor-validator"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "mocha": "*",
+    "should": "*",
+    "superagent": "*",
+    "sailor-scripts": "git://github.com/sailorjs/sailor-scripts",
+    "grunt-translate-compile": "git://github.com/Kikobeats/translate-compile"
+  },
+  "engines": {},
+  "homepage": "",
+  "keywords": [
+    "sailor",
+    "module"
+  ],
+  "license": "MIT",
+  "main": "",
+  "repository": "Kikobeats/sailor-sailor-module-base",
+  "scripts": {
+    "test": "sh test/test.sh",
+    "prepublish": "npm prune"
+  }
+}

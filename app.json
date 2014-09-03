@@ -1,0 +1,36 @@
+{
+  "apps"             : [{
+  "name"             : "sailor",
+  "script"           : "app.js",
+  "watch"            : true,
+  "ignoreWatch"      : ["node_modules", ".git", ".tmp", "assets", "views", "logs", "app.json"],
+  "env"              : {"NODE_ENV": "development"},
+  "env_production"   : {"NODE_ENV": "production"},
+  "node_args"        : "--harmony",
+  "exec_interpreter" : "node",
+  "exec_mode"        : "cluster_mode",
+  "log_date_format"  : "YYYY-MM-DD HH:mm Z",
+  "pid_file"         : "./logs/app.pid",
+  "err_file"         : "./logs/error.log",
+  "out_file"         : "./logs/out.log",
+  "merge_logs"       : true
+  }],
+  "deploy" : {
+    "production"     : {
+      "user"         : "node",
+      "host"         : "212.83.163.1",
+      "ref"          : "origin/master",
+      "repo"         : "git@github.com:repo.git",
+      "path"         : "/var/www/production",
+      "post-deploy"  : "pm2 startOrRestart app.json --env production --instances max"
+    },
+    "dev"            : {
+      "user"         : "node",
+      "host"         : "212.83.163.1",
+      "ref"          : "origin/master",
+      "repo"         : "git@github.com:repo.git",
+      "path"         : "/var/www/development",
+      "post-deploy"  : "pm2 startOrRestart app.json --env development --instances max"
+    }
+  }
+}
