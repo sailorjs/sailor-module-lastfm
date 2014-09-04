@@ -1,7 +1,7 @@
 {
   "name": "sailor-module-lastfm",
-  "description": "New module for Sailor",
-  "version": "0.0.0",
+  "description": "Integrate LastFM API",
+  "version": "0.0.1",
   "author": {
     "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
@@ -26,11 +26,12 @@
   "homepage": "",
   "keywords": [
     "sailor",
-    "module"
+    "module",
+    "lastfm"
   ],
   "license": "MIT",
   "main": "",
-  "repository": "Kikobeats/sailor-sailor-module-base",
+  "repository": "sailorjs/sailor-module-lastfm",
   "scripts": {
     "test": "sh test/test.sh",
     "prepublish": "npm prune"
