@@ -33,7 +33,6 @@
   "main": "",
   "repository": "sailorjs/sailor-module-lastfm",
   "scripts": {
-    "test": "sh test/test.sh",
-    "prepublish": "npm prune"
+    "test": "sh test/test.sh"
   }
 }
