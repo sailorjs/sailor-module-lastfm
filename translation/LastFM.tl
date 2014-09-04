@@ -3,6 +3,9 @@ LANGUAGES
 	2:es
 
 LastFM
+	BadFormat
+		1:Method or Action invalid.
+		2:Método o Acción inválida.
 
 	Method
 		NotFound

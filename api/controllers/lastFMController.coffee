@@ -1,9 +1,9 @@
-## -- Dependencies -----------------------------------------------------------------------
+## -- Dependencies -------------------------------------------------------------
 
 translate   = require 'sailor-translate'
 errorify    = require 'sailor-errorify'
 
-## -- Exports -----------------------------------------------------------------------
+## -- Exports ------------------------------------------------------------------
 
 module.exports =
 
@@ -20,11 +20,6 @@ module.exports =
     delete params.action
     delete params.method
 
-
-    res.ok(params)
-
-    # LastFMService.do method, action, params, (err, response) ->
-    #   return res.badRequest(err) if err
-    #   res.ok(response)
-
-    # res.ok("#{method} and #{action}")
+    LastFMService.do method, action, params, (err, response) ->
+      return res.badRequest(err) if err
+      res.ok(response)

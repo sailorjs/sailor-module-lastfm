@@ -21,4 +21,4 @@ http://links.sailsjs.org/docs/config/routes
 ###
 module.exports.routes =
 
-  "GET /:lang?/lastfm/:method?/:action?"  : "lastFMController.endpoint"
+  "GET /lastfm/:method?/:action?"  : "lastFMController.endpoint"

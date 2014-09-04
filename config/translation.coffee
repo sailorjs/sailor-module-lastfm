@@ -1,6 +1,7 @@
 module.exports.translations =
   en:
     LastFM:
+      BadFormat: "Method or Action invalid."
       Method:
         NotFound: "Need to specify a method."
 
@@ -9,6 +10,7 @@ module.exports.translations =
 
   es:
     LastFM:
+      BadFormat: "Método o Acción inválida."
       Method:
         NotFound: "Debe especificar un método."
 
