@@ -109,5 +109,6 @@ describe "LastFM API ::", ->
         throw err  if err
         done()
 
+describe "LastFM Module ::", ->
 
 

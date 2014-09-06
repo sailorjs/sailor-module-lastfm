@@ -8,8 +8,8 @@ errorify    = require 'sailor-errorify'
 module.exports =
 
   endpoint: (req, res)->
-    req.checkParams('method', translate.get "LastFM.Method.NotFound").notEmpty()
-    req.checkParams('action', translate.get "LastFM.Action.NotFound").notEmpty()
+    req.assert('method', translate.get "LastFM.Method.NotFound").notEmpty()
+    req.assert('action', translate.get "LastFM.Action.NotFound").notEmpty()
     return res.badRequest(errorify.serialize(req)) if req.validationErrors()
 
     params = do req.params.all

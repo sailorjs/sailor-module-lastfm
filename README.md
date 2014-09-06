@@ -1,4 +1,4 @@
-![](http://i.imgur.com/9f2gtYG.png)
+![](http://i.imgur.com/QP3WFKC.png)
 
 # Sailor Module LastFM
 
