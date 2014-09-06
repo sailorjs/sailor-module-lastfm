@@ -1,3 +1,5 @@
+![](http://i.imgur.com/9f2gtYG.png)
+
 # Sailor Module LastFM
 
 [![Build Status](https://secure.travis-ci.org/sailorjs/sailor-module-lastfm.png?branch=master)](https://travis-ci.org/sailorjs/sailor-module-lastfm)
@@ -7,7 +9,6 @@
 [![Gittip](http://img.shields.io/gittip/Kikobeats.svg?style=flat)](https://www.gittip.com/Kikobeats/)
 
 > Integrate LastFM API. Based on [node-lastfmapi](https://github.com/maxkueng/node-lastfmapi).
-
 
 ## Install
 
