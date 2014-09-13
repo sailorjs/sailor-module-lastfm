@@ -20,6 +20,6 @@ module.exports =
     delete params.action
     delete params.method
 
-    lastFMService.api method, action, params, (err, response) ->
+    LastFMService.api method, action, params, (err, response) ->
       return res.badRequest(err) if err
       res.ok(response)
