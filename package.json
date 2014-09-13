@@ -1,7 +1,7 @@
 {
   "name": "sailor-module-lastfm",
   "description": "Integrate LastFM API",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "author": {
     "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
