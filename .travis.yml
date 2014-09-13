@@ -5,7 +5,3 @@ before_install:
 - currentfolder=${PWD##*/}
 - if [ "$currentfolder" != 'sailor-sailor-module-base' ]; then cd .. && eval "mv $currentfolder
   sailor-sailor-module-base" && cd sailor-sailor-module-base; fi
-env:
-  global:
-  - secure: K/BttHsXYgkNck0ogsbjhzuylqYAdbB016Q4GomVjIQgHYIrVkIaFlR9g8Wvfn7po+q2ar4fDK695qls3ReUoYwxJDcojOmDBVijQNMgg8lmvAvAPQpCbWl6OODlxjOJ3aoMz5HqYANde7P7d9Mk0sGTOSQ/3f7xVM8dfl8TPiY=
-  - secure: CydOH6YMa1SuuupYKjqrRuZFpgMAj5rIK0wKYJJIo36lmWTfIxnJjCtXaCUr9sV8ko9gFbfA3QUqhIa1NRxpuTAG1avkAkhhk0SJ0M5OjFQLOf5UkgjthkMvqvSgj1PCvRebofOumQviQB3KiqKKANEJ8C/qk+0emp8tjIVEYa8=
