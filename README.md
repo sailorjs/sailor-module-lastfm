@@ -26,4 +26,4 @@ To know the methods and actions in the LastFM [API documentation](https://github
 
 ## License
 
-MIT © [Kiko Beats](http://www.sailorjs.com)
+MIT © [Kiko Beats](http://kikobeats.com)

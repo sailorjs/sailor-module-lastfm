@@ -1,6 +1,6 @@
 path = "http://localhost:1337"
 
 paths =
-  lastfm:  path + "/en/user"
+  lastfm:  path + "/lastfm"
 
 module.exports = paths

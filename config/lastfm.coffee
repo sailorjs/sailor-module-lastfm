@@ -1,3 +1,3 @@
 module.exports.lastfm =
-  api_key: process.env.LASTFM_API_KEY
-  secret:  process.env.LASTFM_SECRET
+  key   : process.env.LASTFM_KEY
+  secret: process.env.LASTFM_SECRET

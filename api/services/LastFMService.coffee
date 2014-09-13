@@ -1,18 +1,20 @@
 ## -- Dependencies -------------------------------------------------------------
 
-LastFM_API  = require 'lastfmapi'
-translate   = require 'sailor-translate'
-errorify    = require 'sailor-errorify'
+LastFM_API   = require 'lastfmapi'
+translate    = require 'sailor-translate'
+errorify     = require 'sailor-errorify'
+lastFMConfig = sails.config.lastfm
 
-LastFM = new LastFM_API
-  api_key: sails.config.lastfm.api_key
-  secret : sails.config.lastfm.secret
+lastFM = new LastFM_API
+  api_key: lastFMConfig.key
+  secret : lastFMConfig.secret
+
+NOT_OBJECT_ERROR =
+  code: 6
 
 firstProperty = (obj) ->
   obj[Object.keys(obj)[0]]
 
-NOT_OBJECT_ERROR =
-  code: 6
 
 ## -- Exports ------------------------------------------------------------------
 
@@ -21,13 +23,15 @@ module.exports =
   do: (method, action, query, cb) ->
 
     try
-      LastFM[method][action] query, (err, info) ->
-        cb(err, info) unless err
-        cb(err, info) if err and err.error isnt NOT_OBJECT_ERROR.code
+      lastFM[method][action] query, (err, data) ->
+        cb(err, data) unless err
+        cb(err, data) if err and err?.error? isnt NOT_OBJECT_ERROR.code
 
+        # Case when the method need a single param instead of a Object.
         # try to fix the error
         index = firstProperty(query)
-        LastFM[method][action] index, (err, info) ->
-          cb(err, info)
+        lastFM[method][action] index, (err, data) ->
+          cb(err, data)
+
     catch e
       cb(errorify.serialize translate.get "LastFM.BadFormat", null)
