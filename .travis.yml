@@ -3,8 +3,8 @@ node_js:
 - '0.10'
 before_install:
 - currentfolder=${PWD##*/}
-- if [ "$currentfolder" != 'sailor-sailor-module-base' ]; then cd .. && eval "mv $currentfolder
-  sailor-sailor-module-base" && cd sailor-sailor-module-base; fi
+- if [ "$currentfolder" != 'sailor-module-lastfm' ]; then cd .. && eval "mv $currentfolder
+  sailor-module-lastfm" && cd sailor-module-lastfm; fi
 env:
   global:
   - secure: YTAeWo6uSL5Q41GqlB6HsWWkdrUS56dE1gFfBvT9hRs5962qkD+6KqK2kVyDcokQn+R9QUPKIXVqTzPK2eXe7PeT7nCDO6tqMOf8++vFr/R6rtU0K7bvSIhUCnoikw28s0XncpCZmrgRswxAGDHQC0RHhFvptEuLwyJY2zVtoSM=
