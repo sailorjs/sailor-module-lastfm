@@ -25,7 +25,7 @@ module.exports =
     try
       lastFM[method][action] query, (err, data) ->
         cb(err, data) unless err
-        cb(err, data) if err and err?.error? isnt NOT_OBJECT_ERROR.code
+        cb(errorify.serialize err, data) if err and err?.error? isnt NOT_OBJECT_ERROR.code
 
         # Case when the method need a single param instead of a Object.
         # try to fix the error
