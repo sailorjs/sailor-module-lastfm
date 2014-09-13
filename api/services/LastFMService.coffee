@@ -20,7 +20,7 @@ firstProperty = (obj) ->
 
 module.exports =
 
-  do: (method, action, query, cb) ->
+  api: (method, action, query, cb) ->
 
     try
       lastFM[method][action] query, (err, data) ->
