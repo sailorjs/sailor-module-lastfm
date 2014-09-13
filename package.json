@@ -1,32 +1,28 @@
 {
   "name": "sailor-module-lastfm",
   "description": "Integrate LastFM API",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
     "url": "https://github.com/Kikobeats"
   },
   "dependencies": {
-    "lastfmapi": "*",
     "coffee-script": "*",
-    "sailor-errorify": "git://github.com/sailorjs/sailor-errorify",
-    "sailor-translate": "git://github.com/sailorjs/sailor-translate",
-    "sailor-validator": "git://github.com/sailorjs/sailor-validator"
+    "lastfmapi": "*"
   },
   "devDependencies": {
     "grunt": "*",
     "grunt-contrib-watch": "*",
+    "grunt-translate-compile": "git://github.com/Kikobeats/translate-compile",
     "mocha": "*",
-    "should": "*",
-    "superagent": "*",
     "sailor-scripts": "git://github.com/sailorjs/sailor-scripts",
-    "grunt-translate-compile": "git://github.com/Kikobeats/translate-compile"
+    "should": "*",
+    "superagent": "*"
   },
-  "engines": {},
-  "homepage": "",
   "keywords": [
     "sailor",
+    "component",
     "module",
     "lastfm"
   ],
