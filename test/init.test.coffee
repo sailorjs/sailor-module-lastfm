@@ -7,7 +7,7 @@ scripts   = require 'sailor-scripts'
 ## -- Setup ------------------------------------------------------------------------------
 
 opts =
-  log: level: "silly"
+  log: level: "silent"
   plugins: [pkg.name]
 
 SCOPE =
