@@ -86,5 +86,3 @@ describe "LastFM :: API", ->
       .end (res) ->
         res.status.should.equal 400
         done()
-
-
