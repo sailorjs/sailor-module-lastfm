@@ -1,17 +1,17 @@
 {
   "name": "sailor-module-lastfm",
   "description": "Integrate LastFM API",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": {
     "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
     "url": "https://github.com/Kikobeats"
   },
   "dependencies": {
-    "coffee-script": "*",
     "lastfmapi": "*"
   },
   "devDependencies": {
+    "coffee-script": "*",
     "grunt": "*",
     "grunt-contrib-watch": "*",
     "grunt-translate-compile": "git://github.com/Kikobeats/translate-compile",
