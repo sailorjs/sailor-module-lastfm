@@ -1,14 +1,13 @@
 ## -- Dependencies -----------------------------------------------------------------------
 
-pkg       = require '../package.json'
 fs        = require 'fs'
+pkg       = require '../package.json'
 scripts   = require 'sailor-scripts'
 
 ## -- Setup ------------------------------------------------------------------------------
 
 opts =
   log: level: "silent"
-  plugins: [pkg.name]
 
 SCOPE =
   MODULE       : process.cwd()
@@ -21,7 +20,7 @@ before (done) ->
     scripts.newBase ->
       scripts.linkDependency dependency for dependency in SCOPE.DEPENDENCIES
       scripts.link SCOPE.MODULE, SCOPE.LINK
-      scripts.writePluginFile pkg.name
+      scripts.writeModuleFile pkg.name
       scripts.lift SCOPE.TEST, opts, done
   else
     scripts.clean "#{SCOPE.TEST}/.tmp/"
