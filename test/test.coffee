@@ -42,7 +42,7 @@ describe "LastFM :: API", ->
           limit : "1"
         .end (res) ->
           res.status.should.equal 200
-          res.body.artist.name.should.eql 'Thomas Bangalter'
+          res.body.artist.name.should.eql 'Justice'
           done()
 
     describe 'Event', ->
