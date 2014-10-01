@@ -16,7 +16,7 @@
     "grunt-contrib-watch": "*",
     "grunt-translate-compile": "git://github.com/Kikobeats/translate-compile",
     "mocha": "*",
-    "sailor-scripts": "git://github.com/sailorjs/sailor-scripts",
+    "sailor": "git://github.com/sailorjs/sailorjs",
     "should": "*",
     "superagent": "*"
   },
