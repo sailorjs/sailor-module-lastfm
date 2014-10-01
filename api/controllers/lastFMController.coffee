@@ -1,7 +1,8 @@
 ## -- Dependencies -------------------------------------------------------------
 
-translate   = require 'sailor-translate'
-errorify    = require 'sailor-errorify'
+sailor       = require 'sailorjs'
+translate    = sailor.translate
+errorify     = sailor.errorify
 
 ## -- Exports ------------------------------------------------------------------
 

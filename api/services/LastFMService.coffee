@@ -1,8 +1,9 @@
 ## -- Dependencies -------------------------------------------------------------
 
+sailor       = require 'sailorjs'
+translate    = sailor.translate
+errorify     = sailor.errorify
 LastFM_API   = require 'lastfmapi'
-translate    = require 'sailor-translate'
-errorify     = require 'sailor-errorify'
 lastFMConfig = sails.config.lastfm
 
 lastFM = new LastFM_API
